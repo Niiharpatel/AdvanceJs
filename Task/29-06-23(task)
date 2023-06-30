@@ -3,7 +3,7 @@ let family = {
     name: "Bhanabhai",
     age: 75,
     child: [{
-        id: 0,
+        id: 101,
         name: "Kalyanjibhai",
         age: 52,
         vehicle: [{
@@ -19,7 +19,7 @@ let family = {
             age: 28
         }]
     }, {
-        id: 1,
+        id: 102,
         name: "Ashokbhai",
         age: 55,
         vehicle: [{
@@ -36,7 +36,7 @@ let family = {
 
         }]
     }, {
-        id: 2,
+        id: 103,
         name: "Miraben",
         age: 65,
         vehicle: [{
@@ -60,29 +60,56 @@ let family = {
 // -> all son of your dada
 
 // let data = family.child.map((e) => {
-//     console.log("Child Name:", e.name);
+//     console.log("Child Name:", e?.name);
 // })
 
 
 // ======================================================================================================
 // -> all son of father/uncle's:
 
+function printChildById(id) {
+    let data = family?.child.find((e) => {
+        return e.id == id;
+    })
+    // console.log("Data:", data.name)
+
+    data.son.map((x) => {
+        console.log(x.count);
+    })
+
+    // data.vehicle.map((x) => {
+    //     console.log(x);
+    // })
+
+}
+
+// printChildById(101)
+
+
+
+
+
+// -----------------------------------------------------------------------------------
 // function details(id) {
-
-//     console.log(family.child[id].son)
-
+//     console.log(family?.child[id].son);
 // }
-// details(0)
+
+// details(0);
 
 
 
 // ==========================================================================================================
 // -> badha family ni vehicale details like me jeni id apu aa family ni:
 
-// function details(id) {
-//     console.log(family.child[id].vehicle)
+// function printVehicleById(id) {
+//     let data = family?.child.find((e) => {
+//         return e.id == id;
+//     })
+
+//     return data.vehicle;
 // }
 
-// details(2)
+// let store = printVehicleById(102);
+// console.log("store:", store);
 
 
