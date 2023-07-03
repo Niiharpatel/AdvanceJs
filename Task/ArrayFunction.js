@@ -1,29 +1,25 @@
+// function myFun() {
+// let fruits = ["apple", "banana", "mango", "orange"];
 
+// delete fruits[2];  // remove only value from index..
+// alert(fruits);
 
-function myFun() {
-    let fruits = ["apple", "banana", "mango"];
+// fruits.splice(1, 2);  // (from which index to start,number of index to be remove)
+// alert(fruits);
+// console.log("🚀 ~ file: ArrayFunction.js:11 ~ myFun ~ fruits:", fruits)
 
-    delete fruits[2];  // remove only value from index..
-    alert(fruits);
+let subject = ["ajs", "php", "node", "python", "database"];
 
-    fruits.splice(1, 2);  // remove index and value..
-    alert(fruits);
+console.log(subject.slice(0, 3))  //(from where to select,number of index to be select - 1)
 
-    let subject = ["ajs", "php", "node", "python", "database"];
+//     alert(fruits.concat(subject));  // connect two array...
 
-    alert(subject.slice(0, 3));  // print value from given number..
+//     let array1 = [10, 50, 648, 21, 436];
 
-    alert(fruits.concat(subject));  // connect two array...
+//     array1.sort(function (a, b) {
+//         return a - b  // ascending..
 
-    let array1 = [10, 50, 648, 21, 436];
+//     });
 
-    array1.sort(function (a, b) {
-        return a - b  // ascending..
-
-    });
-
-    alert(array1);
-}
-
-
-
+//     alert(array1);
+// }
