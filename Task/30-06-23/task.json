@@ -1,5 +1,5 @@
-let x=[
-  {
+
+ [ {
     "city": "Delhi",
     "country": "India",
     "iso2": "IN",
@@ -1199,7 +1199,7 @@ let x=[
     "capital": "",
     "population": "2473"
   }
-]
+ ]
 
 
 
