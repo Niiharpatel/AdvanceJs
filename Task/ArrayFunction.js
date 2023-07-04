@@ -4,7 +4,7 @@
 // delete fruits[2];  // remove only value from index..
 // alert(fruits);
 
-// fruits.splice(1, 2);  // (from which index to start,number of index to be remove)
+// fruits.splice(1, 2);  // (from which index to start,number of index to be remove)  (index , Remove ,Add)
 // alert(fruits);
 // console.log("🚀 ~ file: ArrayFunction.js:11 ~ myFun ~ fruits:", fruits)
 
