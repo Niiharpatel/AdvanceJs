@@ -7,7 +7,7 @@
 // ];
 
 // let array = person.map((fname) => {
-//     console.log(`${fname.name} `)
+//     console.log(fname.name)
 
 // });
 
