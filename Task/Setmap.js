@@ -14,3 +14,5 @@ function setfun() {
     // alert(user);
     console.log(user);
 }
+
+setfun();
